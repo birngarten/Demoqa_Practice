@@ -22,4 +22,10 @@ public class Card01_Elements01_TextBox_Page {
     @FindBy(xpath = "//label[@class='form-label']")
     public List<WebElement> textBoxElementsList;
 
+    @FindBy(xpath = "//input[@id='userEmail']")
+    public WebElement emailTextBox;
+
+    @FindBy(xpath = "//button[@id='submit']")
+    public WebElement submitButton;
+
 }
