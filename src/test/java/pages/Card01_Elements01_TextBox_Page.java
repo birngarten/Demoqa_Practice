@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 
 public class Card01_Elements01_TextBox_Page {
     public Card01_Elements01_TextBox_Page() {
@@ -13,5 +15,11 @@ public class Card01_Elements01_TextBox_Page {
 
     @FindBy(xpath = "//div[@class='card-up']")
     public WebElement elementsCard;
+
+    @FindBy(xpath = "//span[.='Text Box']")
+    public WebElement textBoxLink;
+
+    @FindBy(xpath = "//label[@class='form-label']")
+    public List<WebElement> textBoxElementsList;
 
 }
